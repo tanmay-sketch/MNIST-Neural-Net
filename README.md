@@ -26,14 +26,20 @@ The neural network has a simple two layer architecture. Input layer $\alpha^{[0]
 
 ### Forward Propagation
 $$ Z^{[1]} = W^{[1]}X+b^{[1]} $$
+
 $$A^{[1]} = g_{ReLU}(Z^{[1]}) $$
+
 $$Z^{[2]} = W^{[2]}A^{[1]}+b^{[2]} $$
+
 $$A^{[2]} = g_{softmax}(Z^{[2]}) $$
 
 
 ### Backward Propagation
 $$dZ^{[2]} = A^{[2]} - Y $$
+
 $$dW^{[2]} = 1/m dZ^{[2]} A^{[1]T}$$
+
 $$dB^{[2]} = 1/m \sum dZ^{[2]}$$
+
 $$dZ^{[1]} = W^{[2]T}dZ^{[2]}\cdot\*g^{[1]}'(z^{[1]})$$
 

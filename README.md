@@ -22,9 +22,20 @@ This repository contains an Neural Network for the MNIST database, built just us
 
 ## Math behind the Neural Network 
 
-The neural network has a simple two layer architecture. Input layer $\alpha^{[0]}$ will have 784 units corresponding to the 784 pixels in the 28x28 image. A hidden layer $\alpha^{[1]}$ will have 10 units with ReLU activation, and finally our output layer $\alpha^{[2]}$$ will have 10 units corresponding to the 10 digit classes with a softmax function
+The neural network has a simple two layer architecture. Input layer $\alpha^{[0]}$ will have 784 units corresponding to the 784 pixels in the 28x28 image. A hidden layer $\alpha^{[1]}$ will have 10 units with ReLU activation, and finally our output layer $\alpha^{[2]}$ will have 10 units corresponding to the 10 digit classes with a softmax function
 
 ### Forward Propagation
 $$ 
 Z^{[1]} = W^{[1]}X+b^{[1]}
+A^{[1]} = g_{ReLU}(Z^{[1]})
+Z^{[2]} = W^{[2]}A^{[1]}+b^{[2]}
+A^{[2]} = g_{softmax}(Z^{[2]})
+$$
+
+### Backward Propagation
+$$
+dZ^{[2]} = A^{[2]} - Y
+dW^{[2]} = 1/m dZ^{[2]}A{[1]T}
+dB^{[2]} = 1/m \sum dZ^{[2]}
+dZ^{[1]} = W^{[2]T}dZ^{[2]}\cdot\*g^{[1]}'(z^{[1]})
 $$

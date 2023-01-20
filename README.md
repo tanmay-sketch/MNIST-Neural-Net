@@ -8,14 +8,14 @@ STEPS TO BUILD THE NEURAL NETWORK:
 1. Loading the data and splitting the data into training and testing. (Shuffling the data before splitting the data)
 
 2. Creating the functions for different steps in the neural network
-* Initialize parameters
-* Activation Function (ReLU) 
-* Forward Propagation
-* Derivative of Activation function
-* One Hot function
-* Backword propagation
-* Updating the parameters
-* Gradient descent
-* Predictions and Accuracy Functions
+	* Initialize parameters
+	* Activation Function (ReLU) 
+	* Forward Propagation
+	* Derivative of Activation function
+	* One Hot function
+	* Backward propagation
+	* Updating the parameters
+	* Gradient descent
+	* Predictions and Accuracy Functions
 
 3. Running the gradient descent and finding out the accuracy of the model

@@ -1,7 +1,7 @@
 # MNIST-Neural-Net
 Built an MNIST Neural Network Classifier with 88% accuracy
 
-This repository contains an Neural Network for the MNIST database, built just using numpy and math. It is a great way of understanding deep learning concepts. Just through this activity I was able to understand the fundamentals of Neural Networks. 
+This repository contains a Neural Network for the MNIST database, built from the scratch using numpy and math. It is a great way of understanding deep learning concepts. Just through this activity I was able to understand the fundamentals of Neural Networks. 
 
 ## STEPS TO BUILD THE NEURAL NETWORK: 
 
